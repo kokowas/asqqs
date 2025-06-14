@@ -262,7 +262,7 @@
             const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
             if (SpeechRecognitionAPI) {
                 recognition = new SpeechRecognitionAPI();
-                recognition.continuous = false; recognition.lang = document.documentElement.lang || 'en-US';
+                recognition.continuous = false; recognition.lang = document.documentElement.lang || 'fr-FR';
                 recognition.interimResults = false; recognition.maxAlternatives = 1;
                 recognition.onresult = (event) => { /* ... same logic ... */
                     if (!currentCharacter) return;
